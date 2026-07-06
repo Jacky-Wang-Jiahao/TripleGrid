@@ -4,6 +4,10 @@ Basic validation tests for geometry.py.
 These tests verify the mathematical correctness of the Background
 construction rather than software implementation details.
 """
+from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parents[1]))
 
 from math import gcd
 

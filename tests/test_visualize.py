@@ -5,10 +5,14 @@ Run as a module from the parent of the `dotdiagram` package, e.g.:
 
     python -m dotdiagram.demo
 """
-
 from __future__ import annotations
 
 import itertools
+
+from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parents[1]))
 
 from triple_grid.enumerate import enumerate_diagrams
 from triple_grid.geometry import Background

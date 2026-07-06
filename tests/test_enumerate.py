@@ -1,3 +1,8 @@
+from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parents[1]))
+
 from triple_grid.geometry import Background, Color
 from triple_grid.enumerate import (
     longest_color,
